@@ -688,7 +688,7 @@ We can see its first 6 bytes values: `01100101 10001000 10000100 00000000 001000
 
 ![h264 slice header spec](/i/slice_header.png "h264 slice header spec")
 
-Using the spec info we can decode what type of slice (**slice_type**), the frame number (**frame_num**) among others important fields.
+Using the spec info we can decode what type of slice (**slice_type**), the frame number (**frame_num**) among other important fields.
 
 In order to get the values of some fields (`ue(v), me(v), se(v) or te(v)`) we need to decode it using a special decoder called [Exponential-Golomb](https://pythonhosted.org/bitstring/exp-golomb.html), this method is **very efficient to encode variable values**, mostly when there are many default values.
 
@@ -698,7 +698,7 @@ We can see the **bitstream as a protocol** and if you want or need to learn more
 
 ![h264 bitstream macro diagram](/i/h264_bitstream_macro_diagram.png "h264 bitstream macro diagram")
 
-We can explore others bitstreams like the [VP9 bitstream](https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf), [H.265 (HEVC)](http://handle.itu.int/11.1002/1000/11885-en?locatt=format:pdf) or even our **new best friend** [**AV1** bitstream](https://medium.com/@mbebenita/av1-bitstream-analyzer-d25f1c27072b#.d5a89oxz8
+We can explore other bitstreams like the [VP9 bitstream](https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf), [H.265 (HEVC)](http://handle.itu.int/11.1002/1000/11885-en?locatt=format:pdf) or even our **new best friend** [**AV1** bitstream](https://medium.com/@mbebenita/av1-bitstream-analyzer-d25f1c27072b#.d5a89oxz8
 ), [do they all look similar? No](http://www.gpac-licensing.com/2016/07/12/vp9-av1-bitstream-format/), but once you learned one you can easily get the others.
 
 > ### Hands-on: Inspect the H.264 bitstream
@@ -830,10 +830,10 @@ Online Courses and Tutorials:
 
 Books:
 
-* https://www.amazon.com/Understanding-Compression-Data-Modern-Developers/dp/1491961538/ref=sr_1_1?s=books&ie=UTF8&qid=1486395327&sr=1-1
+* https://www.amazon.com/Understanding-Compression-Data-Modern-Developers/dp/1491961538
 * https://www.amazon.com/H-264-Advanced-Video-Compression-Standard/dp/0470516925
-* https://www.amazon.com/Practical-Guide-Video-Audio-Compression/dp/0240806301/ref=sr_1_3?s=books&ie=UTF8&qid=1486396914&sr=1-3&keywords=A+PRACTICAL+GUIDE+TO+VIDEO+AUDIO
-* https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005/ref=sr_1_1?s=books&ie=UTF8&qid=1486396940&sr=1-1&keywords=jan+ozer
+* https://www.amazon.com/Practical-Guide-Video-Audio-Compression/dp/0240806301
+* https://www.amazon.com/Video-Encoding-Numbers-Eliminate-Guesswork/dp/0998453005
 
 Bitstream Specifications:
 
